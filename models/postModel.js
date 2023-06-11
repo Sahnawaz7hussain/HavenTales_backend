@@ -6,7 +6,7 @@ const PostSchema = new mongoose.Schema(
       type: String,
       required: [true, "Title can't be empty!"],
       unique: [true, "Duplicate post title"],
-      maxLength: [50, "Maximum length shuld be 50 charts"],
+      maxLength: [80, "Maximum length shuld be 50 charts"],
     },
     desc: {
       type: String,
